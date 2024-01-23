@@ -48,4 +48,20 @@ namespace pro
             Console.WriteLine($"{this.GetType().Name} says meeaw. Age: {Age}, Name: {Name}");
         }
     }
+
+    public class Horse : Animal
+    {
+
+        public Horse(string Name, int Age)
+        {
+            this.Name = Name;
+            this.Age = Age;
+        }
+
+
+        public override void MakeVoice()
+        {
+            Console.WriteLine($"{this.GetType().Name} says neeeaaahh. Age: {Age}, Name: {Name}");
+        }
     }
+}
